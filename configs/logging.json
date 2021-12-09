@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "disable_existing_loggers": "False",
+  "formatters": {
+    "default": {
+      "format": "[%(levelname)8s]  [%(filename)s/%(funcName)s:%(lineno)s] - %(message)s"
+    },
+    "errors": {
+      "format": "[%(asctime)s] [%(levelname)8s] [%(filename)s/%(funcName)s:%(lineno)s]: %(message)s"
+    }
+  },
+  "handlers": {
+    "console": {
+      "level": "DEBUG",
+      "class": "logging.StreamHandler",
+      "formatter": "default",
+      "stream" : "ext://sys.stdout"
+    }
+  },
+  "root": {
+    "handlers": [
+      "console"
+    ],
+    "level": "DEBUG"
+  }
+}
