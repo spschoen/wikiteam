@@ -1,9 +1,9 @@
 http://artha.sourceforge.net/wiki/api.php
-http://net-snmp.sourceforge.net/wiki/api.php
-http://gvsigce.sourceforge.net/wiki/api.php
-http://nsis.sourceforge.net/mediawiki/api.php
 http://bibus-biblio.sourceforge.net/wiki/api.php
-http://lmms.sourceforge.net/wiki/api.php
 http://emmabuntus.sourceforge.net/mediawiki/api.php
+http://gvsigce.sourceforge.net/wiki/api.php
+http://lmms.sourceforge.net/wiki/api.php
+http://net-snmp.sourceforge.net/wiki/api.php
+http://nsis.sourceforge.net/mediawiki/api.php
 http://retroshare.sourceforge.net/wiki/api.php
 http://shareaza.sourceforge.net/mediawiki/api.php
