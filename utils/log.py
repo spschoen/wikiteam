@@ -61,11 +61,11 @@ def setup_dump_errors_file(dump_path: pathlib.Path) -> None:
     formatter = logging.Formatter(logging_config["formatters"]["errors"]["format"], "%Y-%m-%d %H:%M:%S")
     file_logger.setFormatter(formatter)
 
-    # This is in case someone runs dumpgenerator.py multiple times from the same script, just resetting the
-    # handlers to the ones defined in the file at runtime start.
+    # This is in case someone runs dumpgenerator.py multiple times from the same script,
+    # just resetting the handlers to the ones defined in the file at runtime start.
     # Without it, the logger will write to the first and second <dump path>/errors.txt files, instead of the second.
     # (This is really unlikely to happen as I imagine most people would just run dumpgenerator.py <args>
-    #  but just in case (AKA in my testing), we should still handle this event)
+    # but just in case (AKA in my testing), we should still handle this event)
     for handler in dump_generator_logger.handlers:
         dump_generator_logger.removeHandler(handler)
     for handler in original_handlers:
